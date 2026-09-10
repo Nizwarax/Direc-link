@@ -1,0 +1,1 @@
+Patch target: keep page open during download. Use JS fetch/blob download flow, loading overlay, and do not navigate away. Engine backend remains unchanged.

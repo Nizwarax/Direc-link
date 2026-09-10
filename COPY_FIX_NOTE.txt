@@ -1,0 +1,1 @@
+Copy link changed to prefer sfile_link (sfile.co) instead of original sfile.mobi.

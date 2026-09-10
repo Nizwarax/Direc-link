@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090d13">
+  <title>VORTEX SFILE ULTIMATE</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+  <main class="shell">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">V</div>
+        <div>
+          <div class="eyebrow">VORTEX PROJECT</div>
+          <h1>SFILE <span>ULTIMATE</span></h1>
+        </div>
+      </div>
+      <div class="status"><i></i> Railway Ready</div>
+    </header>
+
+    <section class="hero">
+      <div class="badge">DIRECT LINK ENGINE</div>
+      <h2>Tempel link. Generate.<br><span>Download langsung.</span></h2>
+      <p>Resolver Sfile berbasis server dengan direct/CDN link, dibuat nyaman untuk HP.</p>
+    </section>
+
+    <section class="panel">
+      <label for="url">SFILE URL</label>
+      <div class="input-wrap">
+        <span class="link-icon">↗</span>
+        <input id="url" autocomplete="off" inputmode="url"
+          placeholder="https://sfile.mobi/..." />
+        <button class="mini" id="pasteBtn" type="button">PASTE</button>
+      </div>
+      <button class="generate" id="generateBtn" type="button">
+        <span id="btnText">GENERATE DIRECT LINK</span>
+        <span class="spinner" id="spinner"></span>
+      </button>
+      <div class="progress"><div id="bar"></div></div>
+      <div class="message" id="message">Engine siap digunakan.</div>
+    </section>
+
+    <section class="result hidden" id="result">
+      <div class="result-head">
+        <div>
+          <small>HASIL RESOLVER</small>
+          <h3 id="fileTitle">Sfile Download</h3>
+        </div>
+        <span class="success">READY</span>
+      </div>
+
+      <div class="meta">
+        <div><small>SIZE</small><b id="fileSize">—</b></div>
+        <div><small>MODE</small><b id="mode">DIRECT / CDN</b></div>
+      </div>
+
+      <label>DIRECT LINK</label>
+      <div class="direct-box">
+        <input id="directUrl" readonly>
+        <button id="copyBtn">COPY</button>
+      </div>
+
+      <div class="actions">
+        <a id="downloadBtn" class="primary" href="#" target="_blank" rel="noopener">DOWNLOAD</a>
+        <a id="openBtn" class="secondary" href="#" target="_blank" rel="noopener">OPEN LINK</a>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="section-title"><h3>Recent Links</h3><button id="clearBtn">CLEAR</button></div>
+      <div id="historyList" class="history-list">
+        <div class="empty">Belum ada riwayat.</div>
+      </div>
+    </section>
+
+    <footer>VORTEX SFILE ULTIMATE • Railway Edition</footer>
+  </main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

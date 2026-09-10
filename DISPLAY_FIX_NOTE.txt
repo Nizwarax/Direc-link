@@ -1,0 +1,1 @@
+Direct Link display/copy now prefers sfile.co/id while keeping download engine unchanged.

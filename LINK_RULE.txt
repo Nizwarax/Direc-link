@@ -1,0 +1,1 @@
+Display/copy link should use https://sfile.co/{id}; direct CDN remains internal for download.
